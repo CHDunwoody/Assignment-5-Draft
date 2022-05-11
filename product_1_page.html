@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: main; }
+            .item4 { grid-area: right; }
+            .item5 { grid-area: footer; }
+
+            .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main main main'
+                'menu right right right right right'
+                'footer footer footer footer footer footer';
+            gap: 10px;
+            background-color: #0C2A6B;
+            padding: 10px;
+            }
+
+            .grid-container > div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            }
+
+            .item1 {
+                background-color: #1E4C9E;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: #EBD115;
+                font-size: 30px;
+            }
+            .item2 {
+                background-color: #209BD4;
+                color: white;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .item3 {
+                background-color: #209BD4;
+                color: white;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .item4 {
+                background-color: #209BD4;
+                color: white;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .item5 {
+                background-color: #209BD4;
+                color: white;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a:link {
+                color: goldenrod;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            a:visited {
+                color: purple;
+                background-color: transparent;
+                text-decoration: none;
+                }
+            a:hover {
+                color: lightblue;
+                background-color: transparent;
+                text-decoration: underline;
+                }
+            a:active {
+                color: green;
+                background-color: transparent;
+                text-decoration: underline;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1"> <a href= "asignment_5.html"> The Button Goblin </a> </div>
+            <div class="item2"> <img src="pictures/DSC02707.JPG" width="100" height="100" alt="Straight Ally Gem"> Straight Ally Gem </a> </div>
+            <div class="item3">description of item</div>
+            <div class="item4">add to cart/buy now button</div>
+            <div class="item5">Footer</div>
+        </div>
+    </body>
+</html>
